@@ -155,6 +155,7 @@ header nav hr{
 @media (min-width:800px){
 	body{
 		margin: 0% 10%;
+		line-height: 1;
 	}
 	header{
 		margin: 3% 7%;
