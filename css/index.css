@@ -135,6 +135,73 @@ hr{
 }
 
 
+
+/*Services Styles */
+
+.services{
+	margin: 3% 0;
+}
+.services h1{
+	font-size: 40px;
+}
+.servicesIMG img{
+	margin-top: 3%;
+	width: 100%;
+}
+
+.services-info-img{
+	max-width: 40%;
+	align-self: flex-end;
+}
+
+.servicesContent{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.contentCardSER{
+	margin: 1% 1%;
+	background-color: lightgrey;
+	width: 48%;
+	padding: 1% 1%;
+	border: 2px solid grey;
+}
+
+.contentCardSER button{
+	width: 25%;
+	padding: 1% 0px;
+	margin: 2% 0;
+	color: grey;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.servicesFooter{
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.someFacts{
+	width: 60%;
+	margin: 0 1%;
+}
+
+
+.servicesFooter ul{
+	margin-top: 4%;
+	margin-left: 4%;
+	line-height: 2;
+}
+
+.copyright{
+	margin: 4% 0;
+}
+
+/*Tablet media query*/
 @media (max-width: 800px){
     header{
         flex-direction: column-reverse;
@@ -156,9 +223,16 @@ hr{
     }
     .contentSection1{
         margin: 4% 0;
-    }
+	}
+	.services-info-img{
+		display: none;
+	}
+	.servicesFooter{
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
+/*Phone media query*/
 @media (max-width: 500px){
     header{
         flex-direction: column-reverse;
@@ -177,6 +251,12 @@ hr{
     }
     .contentCard{
         margin: 3% 0;
-    }
+	}
+	.servicesContent{
+		align-items: center;
+		flex-direction: column;
+	}
+	.contentCardSER{
+		width: 80%;
+	}
 }
-
