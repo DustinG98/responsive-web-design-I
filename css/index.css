@@ -1,3 +1,262 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	margin: 0% 15%;
+	background-color: white;
+}
+header{
+	margin-top: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+}
+header nav hr{
+    display: none;
+}
+header a{
+	color: grey;
+	text-decoration: none;
+}
+hr{
+    border-bottom: 1px solid black;
+}
+
+.CTASection h1{
+	font-size: 75px;
+}
+
+.CTASection{
+	margin: 5% 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.CTA{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.CTASection button{
+	width: 50%;
+	padding: 1% 0px;
+	color: grey;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.contentSection1{
+	display: flex;
+	margin-bottom: 3%;
+}
+
+.contentIMG img{
+	width: 100%;
+}
+
+.contentSection2{
+	display: flex;
+	margin: 3% 0;
+}
+.indexFooter {
+	line-height: 2;
+}
+
+.copyright{
+	text-align: center;
+}
 
 
+
+/*Services Styles */
+
+.services{
+	margin: 3% 0;
+}
+.services h1{
+	font-size: 40px;
+}
+.servicesIMG img{
+	margin-top: 3%;
+	width: 100%;
+}
+
+.services-info-img{
+	max-width: 40%;
+	align-self: flex-end;
+}
+
+.servicesContent{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.contentCardSER{
+	margin: 1% 1%;
+	background-color: lightgrey;
+	width: 48%;
+	padding: 1% 1%;
+	border: 2px solid grey;
+}
+
+.contentCardSER button{
+	width: 25%;
+	padding: 1% 0px;
+	margin: 2% 0;
+	color: grey;
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.servicesFooter{
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.someFacts{
+	width: 60%;
+	margin: 0 1%;
+}
+
+
+.servicesFooter ul{
+	margin-top: 4%;
+	margin-left: 4%;
+	line-height: 2;
+}
+
+.copyright{
+	margin: 4% 0;
+}
+
+/*Tablet media query*/
+@media (max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+    }
+    header nav{
+        width: 100%;
+    }
+    header img{
+        margin-bottom: 5%;
+    }
+    .CTASection img{
+        display: none;
+    }
+    .CTASection h1{
+        font-size: 50px;
+    }
+    .contentCard{
+        margin: 0 3%;
+    }
+    .contentSection1{
+        margin: 4% 0;
+	}
+	.services-info-img{
+		display: none;
+	}
+	.servicesFooter{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/*Phone media query*/
+@media (max-width: 500px){
+    header{
+        flex-direction: column-reverse;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav hr{
+        display: inline-block;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+        width: 100%;
+    }
+    .contentSection1, .contentSection2{
+        flex-direction: column;
+    }
+    .contentCard{
+        margin: 3% 0;
+	}
+	.servicesContent{
+		align-items: center;
+		flex-direction: column;
+	}
+	.contentCardSER{
+		width: 80%;
+	}
+}
